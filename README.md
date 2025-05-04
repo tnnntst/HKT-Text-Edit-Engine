@@ -2,18 +2,24 @@
 Desscription : Text Edit Engine C-implemented Text Edit Engine is a smart tool for efficiently organizing and modifying text in a console setting. Our project illustrates how the core algorithms we have studied including data structures, memory management, and user interface handling.
  
 **Key Data Structures**
+```
 Linked Lists: used to store draft versions and historical records.
 Stacks: created the ability to undo and redo actions.
 Arrays and Strings:  for keeping names and text.
 Binary Tree Concepts: applied in the navigation system version.
 Hash Map Concepts: used for numerical draft selection.
 Sorting Algorithms: used to display the history in the order of events.
+```
+
  
 **Core Features**
-System for Undo/Redo
+**System for Undo/Redo**
+```
 -	keeps track of document changes using two stacks.
 -	allows an infinite number of undo and redo actions during a session.
 -	saves the complete state of the document, including timestamps and content.
+```
+
 **Tracking History**
 -	records every change made to the document with timestamps.
 -	keeps track of the action type, like save, load, or edit.
