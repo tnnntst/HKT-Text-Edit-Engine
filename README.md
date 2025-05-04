@@ -17,8 +17,8 @@ Sorting Algorithms: used to display the history in the order of events.
 **Core Features**
 **System for Undo/Redo**
 ```
--	keeps track of document changes using two stacks.
--	allows an infinite number of undo and redo actions during a session.
+- keeps track of document changes using two stacks.
+- allows an infinite number of undo and redo actions during a session.
 -	saves the complete state of the document, including timestamps and content.
 ```
 
