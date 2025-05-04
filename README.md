@@ -87,6 +87,7 @@ Example:
 4. Enter a period (.) on a new line to finish.
 
 **Expected Output:**
+```
 --------------------------------------------------
 |                  CURRENT TEXT                  |
 --------------------------------------------------
@@ -96,6 +97,7 @@ It supports multiple lines and formatting.
 |                 CURRENT DRAFT                  |
 --------------------------------------------------
 Current Draft: Draft 1
+```
 
 **Undo**
 Function: Return the previous state before the last edit.
@@ -109,6 +111,7 @@ It supports multiple lines and formatting.
 1. Select option 2 (Undo)
 
 **Expected Output:**
+```
 --------------------------------------------------
 |                  CURRENT TEXT                  |
 --------------------------------------------------
@@ -121,7 +124,7 @@ Current Draft: Draft 1
 --------------------------------------------------
 ✅ Undo successful
 --------------------------------------------------
-
+```
 **Redo**
 Function: Restore a previously undone change.
 Usage: Select option 3.
@@ -130,6 +133,7 @@ Example:
 1. Select option 3 (Redo)
 
 **Expected Output:**
+```
 --------------------------------------------------
 |                  CURRENT TEXT                  |
 --------------------------------------------------
@@ -143,6 +147,7 @@ Current Draft: Draft 1
 --------------------------------------------------
 ✅ Redo successful
 --------------------------------------------------
+```
 
 **Drafts**
 Function: Create and switch between document drafts.
@@ -158,6 +163,7 @@ Example:
 3. Enter: Project Outline
 
 **Expected Output:**
+```
 -----------------------------------------------------------------------------------------------
 | NUM |      DRAFT NAME      |      TIMESTAMP     |           TEXT PREVIEW       |
 -----------------------------------------------------------------------------------------------
@@ -168,6 +174,8 @@ Example:
 --------------------------------------------------
 ✅ Created new draft: Project Outline
 --------------------------------------------------
+```
+
 
 **Input:**
 1. Select option 5 (Drafts)
@@ -175,6 +183,7 @@ Example:
 3. Enter: 2
 
 **Expected Output:**
+```
 --------------------------------------------------
 ✅ Switched to draft: Draft 1
 --------------------------------------------------
@@ -187,6 +196,7 @@ It supports multiple lines and formatting.
 |                 CURRENT DRAFT                  |
 --------------------------------------------------
 Current Draft: Draft 1
+```
 
 **History**
 Function: View timestamped action logs.
@@ -200,11 +210,13 @@ Example 4: History View
 1. Select option 4 (History)
 
 **Expected Output:**
+```
 -----------------------------------------------------------------------------------------------
 |  NUM  |      TIME                       |      ACTION           |               Text               |
 -----------------------------------------------------------------------------------------------
 |  1         | 2025-05-02 12:15:55 | Create Draft       | (empty)                     |
 -----------------------------------------------------------------------------------------------
+```
 
 **Load .txt**
 Function: Import text from a file(.txt).
