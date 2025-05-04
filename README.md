@@ -1,5 +1,7 @@
 **HKT Text Edit Engine Project**
+```
 Desscription : Text Edit Engine C-implemented Text Edit Engine is a smart tool for efficiently organizing and modifying text in a console setting. Our project illustrates how the core algorithms we have studied including data structures, memory management, and user interface handling.
+```
  
 **Key Data Structures**
 ```
@@ -21,25 +23,36 @@ Sorting Algorithms: used to display the history in the order of events.
 ```
 
 **Tracking History**
+```
 -	records every change made to the document with timestamps.
 -	keeps track of the action type, like save, load, or edit.
 -	allows users to view the document at any time in past.
 -	allows history clearing with confirmation from the user.
+```
+
 **Draft Management**
+```
 -	allows users to create multiple document drafts.
 -	Easily switch between different drafts.
 -	Every draft has a history of editing.
 -	When switch between drafts, undo/redo data stays.
+```
+
 **Operations on Files**
+```
 - allows text from external.txt files to be loaded.
 - The program efficiently handles file paths in different systems.
- 
+ ```
+
 **Technical Implementation**
+```
 The system is organized into separate files by functional, following a modular design structure.
 Core Module: Manages UI, program flow, and startup.
 Input/Output Module: Handles text editing and file operations.
 Management Module: Controls history, drafts, and versions.
 Header File: Defines shared data structures and function prototypes.
+```
+
 
 **Project File Structure**
 ```
