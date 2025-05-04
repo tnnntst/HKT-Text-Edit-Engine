@@ -36,13 +36,15 @@ Management Module: Controls history, drafts, and versions.
 Header File: Defines shared data structures and function prototypes.
 
 **Project File Structure**
+```
 ├ CMakeLists.txt           # Setting up for the build
 ├ texteditengine.h         # header file shared with data structures
 ├ core.c                   # UI and core functionality
 ├ inoutput.c               # Text editing and file operations
 ├manage.c                  # Draft and history management
 ├main.c                    # Entry point for the program
- 
+```
+
 **How to Run the Code**
 Prerequisites
 •	GCC or another C compiler
