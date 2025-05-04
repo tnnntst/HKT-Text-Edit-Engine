@@ -60,48 +60,48 @@ Header File: Defines shared data structures and function prototypes.
 ├ texteditengine.h         # header file shared with data structures
 ├ core.c                   # UI and core functionality
 ├ inoutput.c               # Text editing and file operations
-├manage.c                  # Draft and history management
-├main.c                    # Entry point for the program
+├ manage.c                 # Draft and history management
+├ main.c                   # Entry point for the program
 ```
 
 **How to Run the Code**
 **Prerequisites**
 ```
-•	GCC or another C compiler
-•	CMake (version 3.10+)
-•	Standard C libraries
+• GCC or another C compiler
+• CMake (version 3.10+)
+• Standard C libraries
 ```
 
 
 **Building the Project with CMake**
 ```
-1.	Clone the repository
+1. Clone the repository
 git clone <repository_url>
 cd <project_directory>
-2.	Create and enter the build directory:
+2. Create and enter the build directory:
 mkdir build && cd build
-3.	Generate build files and compile
+3. Generate build files and compile
 cmake ..
 cmake --build .
-4.	 Run the application:
+4. Run the application:
 ./bin/HKT_Master
 ```
 
 **building Without Cmake**
-1.	  On Unix/Linux/macOS:
+1.	On Unix/Linux/macOS:
 ```
-            gcc -o HKT_Master main.c core.c manage.c 
+gcc -o HKT_Master main.c core.c manage.c 
 ```
-2.	  On Windows:
+2.	On Windows:
 ```
-            gcc -o HKT_Master.exe main.c core.c manage.c inoutput.c 	
- ```
+gcc -o HKT_Master.exe main.c core.c manage.c inoutput.c 	
+```
 
 **Platform Compatibility**
 ```
-•	Cross-Platform Support: Fully functional on both Windows and Unix-based systems.
-•	Terminal Clearing: Automatically clears the terminal using the appropriate command for each operating system.
-•	File Path Handling: Ensures reliable file path handling across all supported platforms.
+• Cross-Platform Support: Fully functional on both Windows and Unix-based systems.
+• Terminal Clearing: Automatically clears the terminal using the appropriate command for each operating system.
+• File Path Handling: Ensures reliable file path handling across all supported platforms.
 ```
 **Detailed Features and Usage Guide**
 **Main Menu Options**
