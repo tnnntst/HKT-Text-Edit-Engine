@@ -130,7 +130,7 @@ Example:
 1. Select option 3 (Redo)
 
 **Expected Output:**
---------------------------------------------------
+**--------------------------------------------------
 |                  CURRENT TEXT                  |
 --------------------------------------------------
 This is my first document in the Text Edit Engine.
@@ -138,7 +138,7 @@ It supports multiple lines and formatting.
 --------------------------------------------------
 |                 CURRENT DRAFT                  |
 --------------------------------------------------
-Current Draft: Draft 1
+Current Draft: Draft 1**
 
 --------------------------------------------------
 ✅ Redo successful
