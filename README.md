@@ -28,7 +28,7 @@ System for Undo/Redo
 - allows text from external.txt files to be loaded.
 - The program efficiently handles file paths in different systems.
  
-**Technical Implementation **
+**Technical Implementation**
 The system is organized into separate files by functional, following a modular design structure.
 Core Module: Manages UI, program flow, and startup.
 Input/Output Module: Handles text editing and file operations.
