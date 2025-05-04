@@ -19,23 +19,23 @@ Sorting Algorithms: used to display the history in the order of events.
 ```
 - keeps track of document changes using two stacks.
 - allows an infinite number of undo and redo actions during a session.
--	saves the complete state of the document, including timestamps and content.
+- saves the complete state of the document, including timestamps and content.
 ```
 
 **Tracking History**
 ```
--	records every change made to the document with timestamps.
--	keeps track of the action type, like save, load, or edit.
--	allows users to view the document at any time in past.
--	allows history clearing with confirmation from the user.
+- records every change made to the document with timestamps.
+- keeps track of the action type, like save, load, or edit.
+- allows users to view the document at any time in past.
+- allows history clearing with confirmation from the user.
 ```
 
 **Draft Management**
 ```
--	allows users to create multiple document drafts.
--	Easily switch between different drafts.
--	Every draft has a history of editing.
--	When switch between drafts, undo/redo data stays.
+- allows users to create multiple document drafts.
+- Easily switch between different drafts.
+- Every draft has a history of editing.
+- When switch between drafts, undo/redo data stays.
 ```
 
 **Operations on Files**
@@ -65,12 +65,16 @@ Header File: Defines shared data structures and function prototypes.
 ```
 
 **How to Run the Code**
-Prerequisites
+**Prerequisites**
+```
 •	GCC or another C compiler
 •	CMake (version 3.10+)
 •	Standard C libraries
+```
+
 
 **Building the Project with CMake**
+```
 1.	Clone the repository
 git clone <repository_url>
 cd <project_directory>
@@ -81,31 +85,43 @@ cmake ..
 cmake --build .
 4.	 Run the application:
 ./bin/HKT_Master
+```
 
 **building Without Cmake**
 1.	  On Unix/Linux/macOS:
+```
             gcc -o HKT_Master main.c core.c manage.c 
+```
 2.	  On Windows:
+```
             gcc -o HKT_Master.exe main.c core.c manage.c inoutput.c 	
- 
+ ```
+
 **Platform Compatibility**
+```
 •	Cross-Platform Support: Fully functional on both Windows and Unix-based systems.
 •	Terminal Clearing: Automatically clears the terminal using the appropriate command for each operating system.
 •	File Path Handling: Ensures reliable file path handling across all supported platforms.
-
+```
 **Detailed Features and Usage Guide**
 **Main Menu Options**
 
 **Edit**
+```
 Function: Add text to the document that is currently accessible.
 Usage: Select option 2.
              Enter text line by line. End with a period (.)
 Note: Empty inputs are ignored.
+```
 Example:
+**Input:**
+```
 1. Select option 1 (Edit)
 2. Enter: This is my first document in the Text Edit Engine.
 3. Enter: It supports multiple lines and formatting.
 4. Enter a period (.) on a new line to finish.
+```
+
 
 **Expected Output:**
 ```
@@ -121,15 +137,19 @@ Current Draft: Draft 1
 ```
 
 **Undo**
+```
 Function: Return the previous state before the last edit.
 Usage: Select option 2.
 Note: You can do more than one undo.
+```
 Example: Initial State:
 Current Text: This is my first document in the Text Edit Engine.
 It supports multiple lines and formatting.
-
 **Input:**
+```
 1. Select option 2 (Undo)
+```
+
 
 **Expected Output:**
 ```
@@ -146,12 +166,18 @@ Current Draft: Draft 1
 ✅ Undo successful
 --------------------------------------------------
 ```
+
 **Redo**
+```
+
 Function: Restore a previously undone change.
 Usage: Select option 3.
-
+```
 Example:
+**Input:**
+```
 1. Select option 3 (Redo)
+```
 
 **Expected Output:**
 ```
@@ -171,17 +197,22 @@ Current Draft: Draft 1
 ```
 
 **Drafts**
+```
+
 Function: Create and switch between document drafts.
 Usage: Select option 5.
 Note: Create a new draft and create name.
 Can switch between drafts.
 View draft details like creation time and content preview.
-
+```
 Example:
 **Input:**
+```
 1. Select option 5 (Drafts)
 2. Select 'n' for new draft
 3. Enter: Project Outline
+```
+
 
 **Expected Output:**
 ```
@@ -199,9 +230,11 @@ Example:
 
 
 **Input:**
+```
 1. Select option 5 (Drafts)
 2. Select 's' for switch draft
 3. Enter: 2
+```
 
 **Expected Output:**
 ```
@@ -220,15 +253,19 @@ Current Draft: Draft 1
 ```
 
 **History**
+```
 Function: View timestamped action logs.
 Usage: Select option 4.
 Note:
 Sort history by timestamp.
 Clear history (with confirmation).
+```
 
 Example 4: History View
 **Input:**
+```
 1. Select option 4 (History)
+```
 
 **Expected Output:**
 ```
@@ -240,26 +277,37 @@ Example 4: History View
 ```
 
 **Load .txt**
+```
 Function: Import text from a file(.txt).
 Usage: Select option 6, enter the filename.
 Note: If current draft has text, choose:
 r = replace, a = append, 0 = cancel
 Loads .txt file from current or build directory
 Saves old content for undo
+```
+
 
 **Save .txt**
+```
 Function: Export text to a file(.txt)
 Usage: Select option 7, enter the filename.
 Note: Create a new file.
 Overwrite existing file.
 Append to an existing file.
 Cancel operation.
+```
+
 
 **About Us**
+```
 Function: View project and team credits.
 Usage: Select option 8.
+```
+
 
 **Exit**
+```
 Function: Close the program.
 Usage: Select option 0.
 Note: clears all of the memory that has been allocated.
+```
